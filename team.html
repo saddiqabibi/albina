@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Our Team - Al-Bina Construction | Expert Engineers & Designers in Pakistan</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Construction Team Pakistan, Civil Engineers, Architects, Interior Designers, Al-Bina Construction Team" name="keywords">
+        <meta content="Meet the expert team behind Al-Bina Construction. Our certified engineers, architects, and designers bring 25+ years of combined experience to every project." name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            .page-header {
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/page-header.jpg');
+                background-size: cover;
+                background-position: center;
+                padding: 80px 0;
+                text-align: center;
+            }
+            .page-header h2 {
+                color: #fff;
+                font-size: 42px;
+                font-weight: 700;
+            }
+            .page-header a {
+                color: #F28123;
+                font-size: 16px;
+                text-decoration: none;
+            }
+            .page-header a:hover {
+                color: #fff;
+            }
+            .page-header span {
+                color: #fff;
+                margin: 0 10px;
+            }
+            .team-item {
+                background: #fff;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 0 30px rgba(0,0,0,0.05);
+                transition: all 0.3s ease;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            .team-item:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            }
+            .team-img {
+                position: relative;
+                overflow: hidden;
+                height: 300px;
+            }
+            .team-img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all 0.5s ease;
+            }
+            .team-img img:hover {
+                transform: scale(1.05);
+            }
+            .team-text {
+                padding: 20px 20px 10px;
+            }
+            .team-text h2 {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 2px;
+            }
+            .team-text p {
+                color: #F28123;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+            .team-text .experience {
+                font-size: 13px;
+                color: #888;
+                font-weight: 400;
+                margin-top: 3px;
+            }
+            .team-social {
+                padding: 0 20px 20px;
+                display: flex;
+                justify-content: center;
+                gap: 8px;
+            }
+            .team-social a {
+                display: inline-block;
+                width: 36px;
+                height: 36px;
+                line-height: 36px;
+                text-align: center;
+                border-radius: 50%;
+                color: #fff;
+                transition: all 0.3s ease;
+                font-size: 14px;
+            }
+            .team-social .social-tw {
+                background: #1DA1F2;
+            }
+            .team-social .social-fb {
+                background: #1877F2;
+            }
+            .team-social .social-li {
+                background: #0A66C2;
+            }
+            .team-social .social-in {
+                background: #E4405F;
+            }
+            .team-social a:hover {
+                transform: translateY(-3px);
+                opacity: 0.8;
+            }
+            .team-stats {
+                padding: 80px 0;
+                background: #f8f9fa;
+            }
+            .stat-item {
+                text-align: center;
+                padding: 30px;
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 30px rgba(0,0,0,0.05);
+                transition: all 0.3s ease;
+                height: 100%;
+            }
+            .stat-item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            }
+            .stat-item h2 {
+                font-size: 42px;
+                font-weight: 700;
+                color: #F28123;
+            }
+            .stat-item p {
+                color: #666;
+                font-size: 16px;
+                margin-bottom: 0;
+                font-weight: 500;
+            }
+            .stat-item i {
+                font-size: 40px;
+                color: #F28123;
+                margin-bottom: 15px;
+                display: block;
+            }
+            .team-values {
+                padding: 80px 0;
+            }
+            .value-box {
+                text-align: center;
+                padding: 30px 20px;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+                height: 100%;
+            }
+            .value-box:hover {
+                background: #f8f9fa;
+                transform: scale(1.03);
+            }
+            .value-box i {
+                font-size: 40px;
+                color: #F28123;
+                margin-bottom: 15px;
+                display: block;
+            }
+            .value-box h4 {
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+            .value-box p {
+                color: #666;
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+            .cta-team {
+                background: #F28123;
+                padding: 60px 0;
+                text-align: center;
+                color: #fff;
+            }
+            .cta-team h2 {
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+            .cta-team p {
+                font-size: 18px;
+                margin-bottom: 25px;
+                opacity: 0.9;
+            }
+            .cta-team .btn {
+                background: #fff;
+                color: #F28123;
+                padding: 12px 40px;
+                font-weight: 600;
+                border-radius: 30px;
+                transition: all 0.3s ease;
+            }
+            .cta-team .btn:hover {
+                background: #222;
+                color: #fff;
+            }
+            @media (max-width: 767px) {
+                .team-img {
+                    height: 250px;
+                }
+                .stat-item h2 {
+                    font-size: 32px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- ============================================ -->
+            <!-- TOP BAR START -->
+            <!-- ============================================ -->
+            <div class="top-bar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <h1 style="color: #F28123;">Al-Bina Construction</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-calendar"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Opening Hour</h3>
+                                            <p>Mon - Sat, 9:00 AM - 6:00 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-call"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Call Us</h3>
+                                            <p>+92-300-1234567</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-send-mail"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Email Us</h3>
+                                            <p>info@albinaconstruction.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ============================================ -->
+            <!-- NAV BAR START -->
+            <!-- ============================================ -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="index.html" class="nav-item nav-link">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="service.html" class="nav-item nav-link">Services</a>
+                                <a href="team.html" class="nav-item nav-link active">Team</a>
+                                <a href="portfolio.html" class="nav-item nav-link">Projects</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                    <div class="dropdown-menu">
+                                        <a href="blog.html" class="dropdown-item">Blog</a>
+                                        <a href="single.html" class="dropdown-item">Single Page</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            </div>
+                            <div class="ml-auto">
+                                <a class="btn" href="contact.html" style="background: #F28123; color: #fff;">Get a Quote</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 1: PAGE HEADER START -->
+            <!-- ============================================ -->
+            <div class="page-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Our Expert Team</h2>
+                        </div>
+                        <div class="col-12">
+                            <a href="index.html">Home</a>
+                            <span>/</span>
+                            <a href="team.html" style="color: #F28123;">Our Team</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 2: TEAM STATS START (NEW) -->
+            <!-- ============================================ -->
+            <div class="team-stats wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Our Strength</p>
+                        <h2>Meet the Team Behind Your Dream Project</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="stat-item">
+                                <i class="fas fa-user-tie"></i>
+                                <h2 data-toggle="counter-up">25</h2>
+                                <p>Years Combined Experience</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <h2 data-toggle="counter-up">150</h2>
+                                <p>Team Members</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="stat-item">
+                                <i class="fas fa-trophy"></i>
+                                <h2 data-toggle="counter-up">500</h2>
+                                <p>Projects Completed</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="stat-item">
+                                <i class="fas fa-smile"></i>
+                                <h2 data-toggle="counter-up">750</h2>
+                                <p>Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Stats End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 3: TEAM MEMBERS START -->
+            <!-- ============================================ -->
+            <div class="team">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Our Professionals</p>
+                        <h2>Meet Our Expert Team Members</h2>
+                    </div>
+                    <div class="row">
+                        <!-- Team Member 1 -->
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-1.jpg" alt="Ahmed Khan - CEO & Founder">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Ahmed Khan</h2>
+                                    <p>CEO & Founder</p>
+                                    <div class="experience">25+ Years Experience</div>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="social-li" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="social-in" href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 2 -->
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-2.jpg" alt="Usman Ali - Lead Civil Engineer">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Usman Ali</h2>
+                                    <p>Lead Civil Engineer</p>
+                                    <div class="experience">15+ Years Experience</div>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="social-li" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="social-in" href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 3 -->
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-3.jpg" alt="Fatima Zaidi - Senior Interior Designer">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Fatima Zaidi</h2>
+                                    <p>Senior Interior Designer</p>
+                                    <div class="experience">10+ Years Experience</div>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="social-li" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="social-in" href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 4 -->
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-4.jpg" alt="Shahid Mahmood - Project Manager">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Shahid Mahmood</h2>
+                                    <p>Project Manager</p>
+                                    <div class="experience">12+ Years Experience</div>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="social-li" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="social-in" href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 5 -->
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-1.jpg" alt="Muhammad Bilal - Architect">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Muhammad Bilal</h2>
+                                    <p>Senior Architect</p>
+                                    <div class="experience">10+ Years Experience</div>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="social-li" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="social-in" href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 6 -->
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-2.jpg" alt="Sana Khan - Structural Engineer">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Sana Khan</h2>
+                                    <p>Structural Engineer</p>
+                                    <div class="experience">8+ Years Experience</div>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="social-li" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="social-in" href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 7 -->
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-3.jpg" alt="Zain Ahmed - Quantity Surveyor">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Zain Ahmed</h2>
+                                    <p>Quantity Surveyor</p>
+                                    <div class="experience">7+ Years Experience</div>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="social-li" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="social-in" href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Member 8 -->
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-4.jpg" alt="Hira Tariq - Landscape Designer">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Hira Tariq</h2>
+                                    <p>Landscape Designer</p>
+                                    <div class="experience">6+ Years Experience</div>
+                                </div>
+                                <div class="team-social">
+                                    <a class="social-tw" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="social-fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="social-li" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="social-in" href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Members End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 4: TEAM VALUES START (NEW) -->
+            <!-- ============================================ -->
+            <div class="team-values wow fadeInUp" data-wow-delay="0.1s" style="background: #f8f9fa;">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Our Culture</p>
+                        <h2>Values That Drive Our Team</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="value-box">
+                                <i class="fas fa-handshake"></i>
+                                <h4>Integrity</h4>
+                                <p>We believe in honest, transparent dealings with our clients, partners, and team members.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="value-box">
+                                <i class="fas fa-medal"></i>
+                                <h4>Excellence</h4>
+                                <p>We strive for the highest quality in every project, ensuring superior craftsmanship and results.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="value-box">
+                                <i class="fas fa-users"></i>
+                                <h4>Teamwork</h4>
+                                <p>We work collaboratively, leveraging each team member's unique skills for the best outcomes.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="value-box">
+                                <i class="fas fa-lightbulb"></i>
+                                <h4>Innovation</h4>
+                                <p>We embrace new technologies and creative solutions to deliver modern, sustainable designs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Values End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 5: CTA TEAM START (NEW) -->
+            <!-- ============================================ -->
+            <div class="cta-team wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <h2>Ready to Work With Our Expert Team?</h2>
+                    <p>Contact us today and let our experienced professionals bring your construction vision to life.</p>
+                    <a href="contact.html" class="btn">Get a Free Quote Today</a>
+                </div>
+            </div>
+            <!-- CTA Team End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 6: FOOTER START -->
+            <!-- ============================================ -->
+            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <h2>Office Contact</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>Main Boulevard, Lahore, Pakistan</p>
+                                <p><i class="fa fa-phone-alt"></i>+92-300-1234567</p>
+                                <p><i class="fa fa-envelope"></i>info@albinaconstruction.com</p>
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Our Services</h2>
+                                <a href="service.html">Building Construction</a>
+                                <a href="service.html">House Renovation</a>
+                                <a href="service.html">Architecture Design</a>
+                                <a href="service.html">Interior Design</a>
+                                <a href="service.html">Professional Painting</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Quick Links</h2>
+                                <a href="about.html">About Us</a>
+                                <a href="contact.html">Contact Us</a>
+                                <a href="team.html">Our Team</a>
+                                <a href="portfolio.html">Our Projects</a>
+                                <a href="testimonials.html">Testimonials</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="newsletter">
+                                <h2>Subscribe to Our Newsletter</h2>
+                                <p>
+                                    Stay updated with our latest construction tips, project updates, and industry news. Subscribe now and never miss an update!
+                                </p>
+                                <div class="form">
+                                    <input class="form-control" placeholder="Enter your email">
+                                    <button class="btn" style="background: #F28123; color: #fff;">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="terms.html">Terms of Use</a>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="cookies.html">Cookies Policy</a>
+                        <a href="contact.html">Help</a>
+                        <a href="faqs.html">FAQs</a>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="index.html" style="color: #F28123;">Al-Bina Construction</a>, All Rights Reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Designed with <i class="fa fa-heart" style="color: #F28123;"></i> by <a href="https://htmlcodex.com" style="color: #F28123;">HTML Codex</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

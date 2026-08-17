@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>FAQs - Al-Bina Construction | Frequently Asked Questions About Construction</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="FAQs, Construction FAQs, Building Questions, Al-Bina Construction, Home Construction Questions" name="keywords">
+        <meta content="Find answers to frequently asked questions about construction services at Al-Bina Construction. Learn about building costs, timelines, permits, and more." name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            .page-header {
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/page-header.jpg');
+                background-size: cover;
+                background-position: center;
+                padding: 80px 0;
+                text-align: center;
+            }
+            .page-header h2 {
+                color: #fff;
+                font-size: 42px;
+                font-weight: 700;
+            }
+            .page-header a {
+                color: #F28123;
+                font-size: 16px;
+                text-decoration: none;
+            }
+            .page-header a:hover {
+                color: #fff;
+            }
+            .page-header span {
+                color: #fff;
+                margin: 0 10px;
+            }
+            .faq-content {
+                padding: 60px 0;
+            }
+            .faq-content .faq-category {
+                margin-bottom: 40px;
+            }
+            .faq-content .faq-category h3 {
+                font-size: 24px;
+                font-weight: 700;
+                color: #222;
+                margin-bottom: 20px;
+                padding-bottom: 10px;
+                border-bottom: 3px solid #F28123;
+                display: inline-block;
+            }
+            .faq-content .faq-category .faq-item {
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 30px rgba(0,0,0,0.05);
+                margin-bottom: 15px;
+                overflow: hidden;
+                transition: all 0.3s ease;
+            }
+            .faq-content .faq-category .faq-item:hover {
+                box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+            }
+            .faq-content .faq-category .faq-item .faq-question {
+                padding: 18px 25px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                background: #f8f9fa;
+            }
+            .faq-content .faq-category .faq-item .faq-question:hover {
+                background: #f0f0f0;
+            }
+            .faq-content .faq-category .faq-item .faq-question h4 {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 0;
+                color: #222;
+                flex: 1;
+            }
+            .faq-content .faq-category .faq-item .faq-question i {
+                font-size: 18px;
+                color: #F28123;
+                transition: all 0.3s ease;
+                margin-left: 15px;
+            }
+            .faq-content .faq-category .faq-item .faq-question i.rotate {
+                transform: rotate(180deg);
+            }
+            .faq-content .faq-category .faq-item .faq-answer {
+                padding: 0 25px;
+                max-height: 0;
+                overflow: hidden;
+                transition: all 0.4s ease;
+                color: #555;
+                line-height: 1.8;
+            }
+            .faq-content .faq-category .faq-item .faq-answer.open {
+                padding: 20px 25px;
+                max-height: 500px;
+            }
+            .faq-content .faq-category .faq-item .faq-answer ul {
+                margin: 10px 0 0 20px;
+            }
+            .faq-content .faq-category .faq-item .faq-answer ul li {
+                margin-bottom: 5px;
+            }
+            .faq-content .faq-search {
+                background: #f8f9fa;
+                padding: 30px;
+                border-radius: 10px;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            .faq-content .faq-search h3 {
+                font-size: 22px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .faq-content .faq-search p {
+                color: #666;
+                margin-bottom: 20px;
+            }
+            .faq-content .faq-search .search-box {
+                display: flex;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            .faq-content .faq-search .search-box input {
+                flex: 1;
+                padding: 12px 20px;
+                border: 1px solid #ddd;
+                border-radius: 5px 0 0 5px;
+                outline: none;
+                font-size: 16px;
+            }
+            .faq-content .faq-search .search-box input:focus {
+                border-color: #F28123;
+            }
+            .faq-content .faq-search .search-box button {
+                background: #F28123;
+                color: #fff;
+                border: none;
+                padding: 12px 25px;
+                border-radius: 0 5px 5px 0;
+                cursor: pointer;
+                font-weight: 600;
+                transition: all 0.3s ease;
+            }
+            .faq-content .faq-search .search-box button:hover {
+                background: #222;
+            }
+            .faq-content .faq-categories-nav {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-bottom: 30px;
+                justify-content: center;
+            }
+            .faq-content .faq-categories-nav a {
+                padding: 10px 25px;
+                background: #f8f9fa;
+                border-radius: 30px;
+                color: #555;
+                text-decoration: none;
+                font-weight: 500;
+                transition: all 0.3s ease;
+                border: 1px solid #eee;
+            }
+            .faq-content .faq-categories-nav a:hover,
+            .faq-content .faq-categories-nav a.active {
+                background: #F28123;
+                color: #fff;
+                border-color: #F28123;
+            }
+            .faq-content .no-results {
+                text-align: center;
+                padding: 40px;
+                display: none;
+            }
+            .faq-content .no-results i {
+                font-size: 60px;
+                color: #ddd;
+                margin-bottom: 20px;
+            }
+            .faq-content .no-results h4 {
+                color: #666;
+            }
+            .cta-faq {
+                background: #F28123;
+                padding: 60px 0;
+                text-align: center;
+                color: #fff;
+            }
+            .cta-faq h2 {
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+            .cta-faq p {
+                font-size: 18px;
+                margin-bottom: 25px;
+                opacity: 0.9;
+            }
+            .cta-faq .btn {
+                background: #fff;
+                color: #F28123;
+                padding: 12px 40px;
+                font-weight: 600;
+                border-radius: 30px;
+                transition: all 0.3s ease;
+            }
+            .cta-faq .btn:hover {
+                background: #222;
+                color: #fff;
+            }
+            @media (max-width: 767px) {
+                .faq-content .faq-search .search-box {
+                    flex-direction: column;
+                }
+                .faq-content .faq-search .search-box input {
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                }
+                .faq-content .faq-search .search-box button {
+                    border-radius: 5px;
+                }
+                .faq-content .faq-categories-nav a {
+                    padding: 8px 18px;
+                    font-size: 14px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- ============================================ -->
+            <!-- TOP BAR START -->
+            <!-- ============================================ -->
+            <div class="top-bar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <h1 style="color: #F28123;">Al-Bina Construction</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-calendar"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Opening Hour</h3>
+                                            <p>Mon - Sat, 9:00 AM - 6:00 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-call"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Call Us</h3>
+                                            <p>+92-300-1234567</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-send-mail"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Email Us</h3>
+                                            <p>info@albinaconstruction.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ============================================ -->
+            <!-- NAV BAR START -->
+            <!-- ============================================ -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="index.html" class="nav-item nav-link">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="service.html" class="nav-item nav-link">Services</a>
+                                <a href="team.html" class="nav-item nav-link">Team</a>
+                                <a href="portfolio.html" class="nav-item nav-link">Projects</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
+                                    <div class="dropdown-menu">
+                                        <a href="blog.html" class="dropdown-item">Blog</a>
+                                        <a href="single.html" class="dropdown-item">Single Page</a>
+                                        <a href="privacy.html" class="dropdown-item">Privacy Policy</a>
+                                        <a href="terms.html" class="dropdown-item">Terms of Use</a>
+                                        <a href="cookies.html" class="dropdown-item">Cookies Policy</a>
+                                        <a href="faqs.html" class="dropdown-item active">FAQs</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            </div>
+                            <div class="ml-auto">
+                                <a class="btn" href="contact.html" style="background: #F28123; color: #fff;">Get a Quote</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 1: PAGE HEADER START -->
+            <!-- ============================================ -->
+            <div class="page-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Frequently Asked Questions</h2>
+                        </div>
+                        <div class="col-12">
+                            <a href="index.html">Home</a>
+                            <span>/</span>
+                            <a href="faqs.html" style="color: #F28123;">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 2: FAQ CONTENT START -->
+            <!-- ============================================ -->
+            <div class="faq-content wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Got Questions?</p>
+                        <h2>Frequently Asked Questions</h2>
+                    </div>
+
+                    <!-- Search Box -->
+                    <div class="faq-search">
+                        <h3><i class="fas fa-search" style="color: #F28123;"></i> Have a Question?</h3>
+                        <p>Search our FAQ database or browse the categories below to find answers to your questions.</p>
+                        <div class="search-box">
+                            <input type="text" id="faqSearchInput" placeholder="Search your question..." onkeyup="searchFAQs()">
+                            <button onclick="searchFAQs()"><i class="fas fa-search"></i> Search</button>
+                        </div>
+                    </div>
+
+                    <!-- Category Navigation -->
+                    <div class="faq-categories-nav">
+                        <a href="#" class="active" data-category="all" onclick="filterCategory('all', this)">All Questions</a>
+                        <a href="#" data-category="general" onclick="filterCategory('general', this)">General</a>
+                        <a href="#" data-category="construction" onclick="filterCategory('construction', this)">Construction</a>
+                        <a href="#" data-category="renovation" onclick="filterCategory('renovation', this)">Renovation</a>
+                        <a href="#" data-category="design" onclick="filterCategory('design', this)">Design</a>
+                        <a href="#" data-category="pricing" onclick="filterCategory('pricing', this)">Pricing</a>
+                        <a href="#" data-category="legal" onclick="filterCategory('legal', this)">Legal</a>
+                    </div>
+
+                    <!-- No Results Message -->
+                    <div class="no-results" id="noResults">
+                        <i class="fas fa-search"></i>
+                        <h4>No results found for your search.</h4>
+                        <p style="color: #888;">Try using different keywords or browse the categories above.</p>
+                    </div>
+
+                    <!-- ============================================ -->
+                    <!-- CATEGORY: GENERAL -->
+                    <!-- ============================================ -->
+                    <div class="faq-category" data-category="general">
+                        <h3><i class="fas fa-info-circle" style="color: #F28123;"></i> General Questions</h3>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>1. What services does Al-Bina Construction offer?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Al-Bina Construction offers a comprehensive range of construction services including:</p>
+                                <ul>
+                                    <li><strong>Building Construction:</strong> Residential, commercial, and industrial buildings</li>
+                                    <li><strong>House Renovation:</strong> Kitchen, bathroom, and complete home makeovers</li>
+                                    <li><strong>Architecture Design:</strong> Modern and innovative architectural designs</li>
+                                    <li><strong>Interior Design:</strong> Residential and commercial interior design</li>
+                                    <li><strong>Professional Painting:</strong> Interior and exterior painting services</li>
+                                    <li><strong>Maintenance & Support:</strong> Ongoing property maintenance</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>2. How long has Al-Bina Construction been in business?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Al-Bina Construction has been serving clients across Pakistan since 1998. With over 25 years of experience, we have built a strong reputation for quality, reliability, and customer satisfaction in the construction industry. We have successfully completed over 500 projects across the country.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>3. Where is Al-Bina Construction located?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Our main office is located at Main Boulevard, Lahore, Pakistan. We serve clients across Pakistan, including major cities like Karachi, Islamabad, Rawalpindi, Multan, Faisalabad, and Peshawar. We also provide services in smaller cities and towns across the country.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>4. What are your office hours?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Our office hours are:</p>
+                                <ul>
+                                    <li><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</li>
+                                    <li><strong>Saturday:</strong> 9:00 AM - 6:00 PM</li>
+                                    <li><strong>Sunday:</strong> Closed</li>
+                                </ul>
+                                <p>For emergency support, we are available 24/7 by phone at <strong>+92-300-1234567</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ============================================ -->
+                    <!-- CATEGORY: CONSTRUCTION -->
+                    <!-- ============================================ -->
+                    <div class="faq-category" data-category="construction">
+                        <h3><i class="fas fa-hard-hat" style="color: #F28123;"></i> Construction Questions</h3>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>5. How long does a typical construction project take?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Project timelines vary based on the scope and complexity of the work. Here are some general estimates:</p>
+                                <ul>
+                                    <li><strong>Small Renovations:</strong> 2-4 weeks</li>
+                                    <li><strong>Medium Renovations:</strong> 1-3 months</li>
+                                    <li><strong>Single-Storey Home:</strong> 6-9 months</li>
+                                    <li><strong>Double-Storey Home:</strong> 9-12 months</li>
+                                    <li><strong>Commercial Buildings:</strong> 12-18 months</li>
+                                    <li><strong>Large Industrial Projects:</strong> 18-24 months</li>
+                                </ul>
+                                <p>We provide detailed project timelines during the planning phase and keep you updated throughout the construction process.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>6. Do you provide free estimates and consultations?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we offer free consultations and site visits to assess your project requirements. During the consultation, we discuss your vision, budget, and timeline. We then provide a detailed, no-obligation estimate. <a href="contact.html" style="color: #F28123;">Contact us today</a> to schedule your free consultation.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>7. How do you ensure quality in your construction work?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We ensure quality through multiple measures:</p>
+                                <ul>
+                                    <li><strong>Premium Materials:</strong> We source materials from trusted, high-quality suppliers</li>
+                                    <li><strong>Skilled Workers:</strong> Our team consists of certified professionals with years of experience</li>
+                                    <li><strong>Quality Checks:</strong> We conduct regular inspections at every stage of construction</li>
+                                    <li><strong>Industry Standards:</strong> We follow international building standards and best practices</li>
+                                    <li><strong>Customer Feedback:</strong> We keep clients informed and involved throughout the process</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>8. Do you help with obtaining construction permits?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely! We handle all the necessary paperwork and permit applications on your behalf. Our team is well-versed in local building codes and regulations across Pakistan. We ensure that your project is fully compliant and approved by the relevant authorities, saving you time and hassle.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>9. Do you offer warranties on your construction work?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we provide comprehensive warranties on all our construction work:</p>
+                                <ul>
+                                    <li><strong>Structural Warranty:</strong> 10-year warranty on structural integrity</li>
+                                    <li><strong>Workmanship Warranty:</strong> 5-year warranty on all workmanship</li>
+                                    <li><strong>Material Warranty:</strong> Varies by material, but we use only quality materials</li>
+                                    <li><strong>Customer Satisfaction:</strong> 100% satisfaction guarantee on all projects</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ============================================ -->
+                    <!-- CATEGORY: RENOVATION -->
+                    <!-- ============================================ -->
+                    <div class="faq-category" data-category="renovation">
+                        <h3><i class="fas fa-home" style="color: #F28123;"></i> Renovation Questions</h3>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>10. What type of renovation projects do you handle?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We handle a wide range of renovation projects:</p>
+                                <ul>
+                                    <li><strong>Kitchen Renovations:</strong> Complete kitchen remodels and upgrades</li>
+                                    <li><strong>Bathroom Renovations:</strong> Modern bathroom designs and installations</li>
+                                    <li><strong>Room Additions:</strong> Adding extra rooms to existing homes</li>
+                                    <li><strong>Basement Finishing:</strong> Converting basements into living spaces</li>
+                                    <li><strong>Home Makeovers:</strong> Complete interior and exterior transformations</li>
+                                    <li><strong>Commercial Renovations:</strong> Office, retail, and restaurant renovations</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>11. Can you renovate while we are living in the house?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we can renovate while you are living in the house. We understand the importance of minimizing disruption and will work with you to create a schedule that causes the least inconvenience. We isolate work areas, manage dust and noise, and ensure your living space remains safe and habitable throughout the renovation process.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>12. How much does a typical renovation cost?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Renovation costs vary widely based on the scope, size, and materials chosen. Here are some rough estimates:</p>
+                                <ul>
+                                    <li><strong>Kitchen Renovation:</strong> PKR 500,000 - 2,000,000</li>
+                                    <li><strong>Bathroom Renovation:</strong> PKR 300,000 - 1,000,000</li>
+                                    <li><strong>Room Addition:</strong> PKR 800,000 - 3,000,000</li>
+                                    <li><strong>Full Home Renovation:</strong> PKR 2,000,000 - 10,000,000+</li>
+                                </ul>
+                                <p>We provide detailed, itemized quotes after a site visit and consultation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ============================================ -->
+                    <!-- CATEGORY: DESIGN -->
+                    <!-- ============================================ -->
+                    <div class="faq-category" data-category="design">
+                        <h3><i class="fas fa-pencil-ruler" style="color: #F28123;"></i> Design Questions</h3>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>13. Do you offer architecture and interior design services?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we offer comprehensive architecture and interior design services through our in-house team of certified architects and designers. We create innovative, functional designs that reflect your style and meet your needs. From concept to completion, we handle every aspect of design and planning.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>14. Can you provide 3D renderings of my project?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely! We provide detailed 3D renderings and walkthroughs of your project before construction begins. This allows you to visualize your space, make changes, and ensure everything is exactly as you want it before we start building. Our 3D designs help eliminate surprises and ensure complete satisfaction.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>15. How much does design service cost?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Our design services are competitively priced and vary based on the scope of the project. We offer:</p>
+                                <ul>
+                                    <li><strong>Free Initial Consultation:</strong> No cost to discuss your project</li>
+                                    <li><strong>Architecture Design:</strong> Typically 5-8% of construction cost</li>
+                                    <li><strong>Interior Design:</strong> Based on project scope and square footage</li>
+                                    <li><strong>Package Deals:</strong> Discounted rates for combined design and construction services</li>
+                                </ul>
+                                <p>We provide transparent pricing with no hidden fees.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ============================================ -->
+                    <!-- CATEGORY: PRICING -->
+                    <!-- ============================================ -->
+                    <div class="faq-category" data-category="pricing">
+                        <h3><i class="fas fa-rupee-sign" style="color: #F28123;"></i> Pricing & Payment Questions</h3>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>16. What payment terms do you offer?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We offer flexible payment plans tailored to your budget:</p>
+                                <ul>
+                                    <li><strong>Initial Deposit:</strong> 25-30% of total project cost to commence work</li>
+                                    <li><strong>Milestone Payments:</strong> Progress-based payments at key project milestones</li>
+                                    <li><strong>Final Payment:</strong> Remaining balance upon project completion</li>
+                                    <li><strong>Financing:</strong> We can connect you with partner financial institutions for project financing</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>17. How do you calculate construction costs?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We calculate construction costs based on several factors:</p>
+                                <ul>
+                                    <li><strong>Square Footage:</strong> The size of the structure</li>
+                                    <li><strong>Materials:</strong> The quality and type of materials chosen</li>
+                                    <li><strong>Labor:</strong> The complexity and duration of the work</li>
+                                    <li><strong>Location:</strong> Site accessibility and logistics</li>
+                                    <li><strong>Design Complexity:</strong> Unique architectural features and finishes</li>
+                                    <li><strong>Permits:</strong> Government fees and approvals</li>
+                                </ul>
+                                <p>We provide detailed, itemized quotes so you understand exactly where your money is going.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>18. Are there any hidden costs in your quotes?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>No, we believe in complete transparency. Our quotes are detailed and itemized, with all costs clearly explained. We include a 10-15% contingency fund for unexpected expenses and communicate any potential changes promptly. We never add hidden fees and always get your approval before making changes that affect the budget.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ============================================ -->
+                    <!-- CATEGORY: LEGAL -->
+                    <!-- ============================================ -->
+                    <div class="faq-category" data-category="legal">
+                        <h3><i class="fas fa-gavel" style="color: #F28123;"></i> Legal Questions</h3>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>19. Is Al-Bina Construction licensed and insured?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, Al-Bina Construction is fully licensed and insured to operate across Pakistan. We comply with all local building codes and regulations. Our insurance covers:</p>
+                                <ul>
+                                    <li><strong>General Liability:</strong> Protection against property damage and injuries</li>
+                                    <li><strong>Worker's Compensation:</strong> Coverage for our workers</li>
+                                    <li><strong>Professional Liability:</strong> Coverage for design and professional services</li>
+                                    <li><strong>Property Insurance:</strong> Coverage for materials and equipment</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>20. What contracts and agreements do you provide?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We provide comprehensive, legally-binding contracts that protect both parties. Our contracts include:</p>
+                                <ul>
+                                    <li><strong>Scope of Work:</strong> Detailed description of work to be performed</li>
+                                    <li><strong>Timeline:</strong> Project start and completion dates</li>
+                                    <li><strong>Payment Schedule:</strong> Detailed payment terms and milestones</li>
+                                    <li><strong>Warranties:</strong> Clear warranty terms and conditions</li>
+                                    <li><strong>Dispute Resolution:</strong> Process for resolving any issues</li>
+                                    <li><strong>Change Orders:</strong> Procedure for project changes</li>
+                                </ul>
+                                <p>We recommend you review all contracts carefully and consult a legal professional if needed.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- FAQ Content End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 3: CTA FAQ START -->
+            <!-- ============================================ -->
+            <div class="cta-faq wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <h2>Still Have Questions?</h2>
+                    <p>We're here to help! Contact us today and get answers to all your construction-related questions.</p>
+                    <a href="contact.html" class="btn">Contact Us Today</a>
+                </div>
+            </div>
+            <!-- CTA FAQ End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 4: FOOTER START -->
+            <!-- ============================================ -->
+            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <h2>Office Contact</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>Main Boulevard, Lahore, Pakistan</p>
+                                <p><i class="fa fa-phone-alt"></i>+92-300-1234567</p>
+                                <p><i class="fa fa-envelope"></i>info@albinaconstruction.com</p>
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Our Services</h2>
+                                <a href="service.html">Building Construction</a>
+                                <a href="service.html">House Renovation</a>
+                                <a href="service.html">Architecture Design</a>
+                                <a href="service.html">Interior Design</a>
+                                <a href="service.html">Professional Painting</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Quick Links</h2>
+                                <a href="about.html">About Us</a>
+                                <a href="contact.html">Contact Us</a>
+                                <a href="team.html">Our Team</a>
+                                <a href="portfolio.html">Our Projects</a>
+                                <a href="privacy.html">Privacy Policy</a>
+                                <a href="terms.html">Terms of Use</a>
+                                <a href="cookies.html">Cookies Policy</a>
+                                <a href="faqs.html">FAQs</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="newsletter">
+                                <h2>Subscribe to Our Newsletter</h2>
+                                <p>
+                                    Stay updated with our latest construction tips, project updates, and industry news. Subscribe now and never miss an update!
+                                </p>
+                                <div class="form">
+                                    <input class="form-control" placeholder="Enter your email">
+                                    <button class="btn" style="background: #F28123; color: #fff;">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="terms.html">Terms of Use</a>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="cookies.html">Cookies Policy</a>
+                        <a href="contact.html">Help</a>
+                        <a href="faqs.html">FAQs</a>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="index.html" style="color: #F28123;">Al-Bina Construction</a>, All Rights Reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Designed with <i class="fa fa-heart" style="color: #F28123;"></i> by <a href="https://htmlcodex.com" style="color: #F28123;">HTML Codex</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- FAQ JAVASCRIPT -->
+        <!-- ============================================ -->
+        <script>
+            // Toggle FAQ Answer
+            function toggleFAQ(element) {
+                var answer = element.nextElementSibling;
+                var icon = element.querySelector('i');
+                
+                // Close other open FAQs in the same category
+                var parent = element.parentElement.parentElement;
+                var allFAQs = parent.querySelectorAll('.faq-item');
+                allFAQs.forEach(function(item) {
+                    if (item !== element.parentElement) {
+                        var ans = item.querySelector('.faq-answer');
+                        var icn = item.querySelector('.faq-question i');
+                        if (ans.classList.contains('open')) {
+                            ans.classList.remove('open');
+                            icn.classList.remove('rotate');
+                        }
+                    }
+                });
+                
+                // Toggle current FAQ
+                answer.classList.toggle('open');
+                icon.classList.toggle('rotate');
+            }
+
+            // Search Functionality
+            function searchFAQs() {
+                var input = document.getElementById('faqSearchInput');
+                var filter = input.value.toLowerCase().trim();
+                var items = document.querySelectorAll('.faq-item');
+                var noResults = document.getElementById('noResults');
+                var found = false;
+
+                // If search is empty, show all
+                if (filter === '') {
+                    items.forEach(function(item) {
+                        item.style.display = 'block';
+                        // Close all answers
+                        var answer = item.querySelector('.faq-answer');
+                        var icon = item.querySelector('.faq-question i');
+                        if (answer.classList.contains('open')) {
+                            answer.classList.remove('open');
+                            icon.classList.remove('rotate');
+                        }
+                    });
+                    // Show all categories
+                    document.querySelectorAll('.faq-category').forEach(function(cat) {
+                        cat.style.display = 'block';
+                    });
+                    noResults.style.display = 'none';
+                    // Reset category filter
+                    filterCategory('all', document.querySelector('.faq-categories-nav a.active'));
+                    return;
+                }
+
+                // Search through all FAQ items
+                items.forEach(function(item) {
+                    var question = item.querySelector('.faq-question h4').textContent.toLowerCase();
+                    var answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                    var match = question.includes(filter) || answer.includes(filter);
+                    
+                    if (match) {
+                        item.style.display = 'block';
+                        found = true;
+                        // Auto-expand matching items
+                        var ansDiv = item.querySelector('.faq-answer');
+                        var icon = item.querySelector('.faq-question i');
+                        if (!ansDiv.classList.contains('open')) {
+                            ansDiv.classList.add('open');
+                            icon.classList.add('rotate');
+                        }
+                    } else {
+                        item.style.display = 'none';
+                        // Close non-matching items
+                        var ansDiv = item.querySelector('.faq-answer');
+                        var icon = item.querySelector('.faq-question i');
+                        if (ansDiv.classList.contains('open')) {
+                            ansDiv.classList.remove('open');
+                            icon.classList.remove('rotate');
+                        }
+                    }
+                });
+
+                // Show/hide no results message
+                if (found) {
+                    noResults.style.display = 'none';
+                } else {
+                    noResults.style.display = 'block';
+                }
+
+                // Hide categories with no visible items
+                document.querySelectorAll('.faq-category').forEach(function(cat) {
+                    var visibleItems = cat.querySelectorAll('.faq-item[style*="display: block"]');
+                    if (visibleItems.length === 0 && filter !== '') {
+                        cat.style.display = 'none';
+                    } else {
+                        cat.style.display = 'block';
+                    }
+                });
+            }
+
+            // Category Filter
+            function filterCategory(category, element) {
+                // Update active class
+                document.querySelectorAll('.faq-categories-nav a').forEach(function(link) {
+                    link.classList.remove('active');
+                });
+                element.classList.add('active');
+
+                // Clear search input
+                document.getElementById('faqSearchInput').value = '';
+                document.getElementById('noResults').style.display = 'none';
+
+                // Show/hide categories
+                document.querySelectorAll('.faq-category').forEach(function(cat) {
+                    if (category === 'all' || cat.getAttribute('data-category') === category) {
+                        cat.style.display = 'block';
+                    } else {
+                        cat.style.display = 'none';
+                    }
+                });
+
+                // Show all FAQ items within visible categories
+                document.querySelectorAll('.faq-item').forEach(function(item) {
+                    item.style.display = 'block';
+                    // Close all answers
+                    var answer = item.querySelector('.faq-answer');
+                    var icon = item.querySelector('.faq-question i');
+                    if (answer.classList.contains('open')) {
+                        answer.classList.remove('open');
+                        icon.classList.remove('rotate');
+                    }
+                });
+            }
+        </script>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

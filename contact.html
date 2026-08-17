@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Us - Al-Bina Construction | Get a Free Quote in Pakistan</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Contact Al-Bina Construction, Construction Company Pakistan, Get a Quote, Building Contractors, Construction Services" name="keywords">
+        <meta content="Contact Al-Bina Construction for expert construction services in Pakistan. Get a free quote, consultation, and professional advice for your building project today." name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            .page-header {
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/page-header.jpg');
+                background-size: cover;
+                background-position: center;
+                padding: 80px 0;
+                text-align: center;
+            }
+            .page-header h2 {
+                color: #fff;
+                font-size: 42px;
+                font-weight: 700;
+            }
+            .page-header a {
+                color: #F28123;
+                font-size: 16px;
+                text-decoration: none;
+            }
+            .page-header a:hover {
+                color: #fff;
+            }
+            .page-header span {
+                color: #fff;
+                margin: 0 10px;
+            }
+            .contact-info .contact-item {
+                display: flex;
+                align-items: flex-start;
+                padding: 20px 0;
+                border-bottom: 1px solid #eee;
+            }
+            .contact-info .contact-item:last-child {
+                border-bottom: none;
+            }
+            .contact-info .contact-item i {
+                font-size: 30px;
+                color: #F28123;
+                width: 50px;
+                margin-top: 5px;
+            }
+            .contact-info .contact-text h2 {
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+            .contact-info .contact-text p {
+                color: #666;
+                margin-bottom: 0;
+            }
+            .contact-info .contact-text a {
+                color: #666;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+            .contact-info .contact-text a:hover {
+                color: #F28123;
+            }
+            .contact-form .form-control {
+                border-radius: 8px;
+                padding: 15px 20px;
+                border: 1px solid #ddd;
+                transition: all 0.3s ease;
+            }
+            .contact-form .form-control:focus {
+                border-color: #F28123;
+                box-shadow: 0 0 0 3px rgba(242, 129, 35, 0.1);
+            }
+            .contact-form textarea.form-control {
+                height: 150px;
+                resize: vertical;
+            }
+            .contact-form .btn {
+                background: #F28123;
+                color: #fff;
+                padding: 15px 40px;
+                border-radius: 30px;
+                font-weight: 600;
+                border: none;
+                transition: all 0.3s ease;
+                width: 100%;
+            }
+            .contact-form .btn:hover {
+                background: #222;
+                transform: translateY(-2px);
+            }
+            .contact-form .btn i {
+                margin-right: 10px;
+            }
+            .contact-hours {
+                padding: 80px 0;
+                background: #f8f9fa;
+            }
+            .hours-item {
+                background: #fff;
+                padding: 30px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 0 30px rgba(0,0,0,0.05);
+                transition: all 0.3s ease;
+                height: 100%;
+            }
+            .hours-item:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            }
+            .hours-item i {
+                font-size: 40px;
+                color: #F28123;
+                margin-bottom: 15px;
+            }
+            .hours-item h4 {
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            .hours-item p {
+                color: #666;
+                margin-bottom: 5px;
+            }
+            .hours-item .highlight {
+                color: #F28123;
+                font-weight: 600;
+            }
+            .map-section {
+                padding: 0;
+                margin: 0;
+                line-height: 0;
+            }
+            .map-section iframe {
+                width: 100%;
+                height: 450px;
+                border: 0;
+            }
+            .cta-contact {
+                background: #F28123;
+                padding: 60px 0;
+                text-align: center;
+                color: #fff;
+            }
+            .cta-contact h2 {
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+            .cta-contact p {
+                font-size: 18px;
+                margin-bottom: 25px;
+                opacity: 0.9;
+            }
+            .cta-contact .btn {
+                background: #fff;
+                color: #F28123;
+                padding: 12px 40px;
+                font-weight: 600;
+                border-radius: 30px;
+                transition: all 0.3s ease;
+            }
+            .cta-contact .btn:hover {
+                background: #222;
+                color: #fff;
+            }
+            @media (max-width: 767px) {
+                .contact-info .contact-item {
+                    padding: 15px 0;
+                }
+                .contact-info .contact-item i {
+                    font-size: 24px;
+                    width: 40px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- ============================================ -->
+            <!-- TOP BAR START -->
+            <!-- ============================================ -->
+            <div class="top-bar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <h1 style="color: #F28123;">Al-Bina Construction</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-calendar"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Opening Hour</h3>
+                                            <p>Mon - Sat, 9:00 AM - 6:00 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-call"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Call Us</h3>
+                                            <p>+92-300-1234567</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-send-mail"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Email Us</h3>
+                                            <p>info@albinaconstruction.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ============================================ -->
+            <!-- NAV BAR START -->
+            <!-- ============================================ -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="index.html" class="nav-item nav-link">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="service.html" class="nav-item nav-link">Services</a>
+                                <a href="team.html" class="nav-item nav-link">Team</a>
+                                <a href="portfolio.html" class="nav-item nav-link">Projects</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                    <div class="dropdown-menu">
+                                        <a href="blog.html" class="dropdown-item">Blog</a>
+                                        <a href="single.html" class="dropdown-item">Single Page</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                            </div>
+                            <div class="ml-auto">
+                                <a class="btn" href="contact.html" style="background: #F28123; color: #fff;">Get a Quote</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 1: PAGE HEADER START -->
+            <!-- ============================================ -->
+            <div class="page-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Contact Us</h2>
+                        </div>
+                        <div class="col-12">
+                            <a href="index.html">Home</a>
+                            <span>/</span>
+                            <a href="contact.html" style="color: #F28123;">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 2: CONTACT MAIN START -->
+            <!-- ============================================ -->
+            <div class="contact wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Get In Touch</p>
+                        <h2>We'd Love to Hear From You</h2>
+                    </div>
+                    <div class="row">
+                        <!-- Contact Info Column -->
+                        <div class="col-lg-5 col-md-6">
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <i class="flaticon-address"></i>
+                                    <div class="contact-text">
+                                        <h2>Our Location</h2>
+                                        <p>Main Boulevard, Lahore, Pakistan</p>
+                                        <p><a href="https://maps.google.com" target="_blank">View on Google Maps <i class="fas fa-external-link-alt"></i></a></p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="flaticon-call"></i>
+                                    <div class="contact-text">
+                                        <h2>Phone Numbers</h2>
+                                        <p><a href="tel:+923001234567">+92-300-1234567</a></p>
+                                        <p><a href="tel:+923001234568">+92-300-1234568</a></p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="flaticon-send-mail"></i>
+                                    <div class="contact-text">
+                                        <h2>Email Address</h2>
+                                        <p><a href="mailto:info@albinaconstruction.com">info@albinaconstruction.com</a></p>
+                                        <p><a href="mailto:support@albinaconstruction.com">support@albinaconstruction.com</a></p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="flaticon-calendar"></i>
+                                    <div class="contact-text">
+                                        <h2>Working Hours</h2>
+                                        <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                                        <p style="color: #F28123; font-weight: 600;">Sunday: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form Column -->
+                        <div class="col-lg-7 col-md-6">
+                            <div class="contact-form">
+                                <form id="contactForm" action="#" method="POST">
+                                    <div class="control-group mb-3">
+                                        <label for="name" style="font-weight: 600;">Your Full Name <span style="color: #F28123;">*</span></label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required />
+                                    </div>
+                                    <div class="control-group mb-3">
+                                        <label for="email" style="font-weight: 600;">Your Email Address <span style="color: #F28123;">*</span></label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email address" required />
+                                    </div>
+                                    <div class="control-group mb-3">
+                                        <label for="phone" style="font-weight: 600;">Your Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" />
+                                    </div>
+                                    <div class="control-group mb-3">
+                                        <label for="subject" style="font-weight: 600;">Subject <span style="color: #F28123;">*</span></label>
+                                        <input type="text" class="form-control" id="subject" placeholder="Enter message subject" required />
+                                    </div>
+                                    <div class="control-group mb-3">
+                                        <label for="message" style="font-weight: 600;">Your Message <span style="color: #F28123;">*</span></label>
+                                        <textarea class="form-control" id="message" placeholder="Tell us about your project" required></textarea>
+                                    </div>
+                                    <div>
+                                        <button class="btn" type="submit">
+                                            <i class="fas fa-paper-plane"></i> Send Message
+                                        </button>
+                                        <p style="font-size: 13px; color: #888; margin-top: 10px;">
+                                            <i class="fas fa-lock" style="color: #F28123;"></i> 
+                                            Your information is safe with us. We'll respond within 24 hours.
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Main End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 3: BUSINESS HOURS START (NEW) -->
+            <!-- ============================================ -->
+            <div class="contact-hours wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Office Hours</p>
+                        <h2>We're Here to Serve You</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="hours-item">
+                                <i class="fas fa-clock"></i>
+                                <h4>Monday</h4>
+                                <p><span class="highlight">9:00 AM</span> - <span class="highlight">6:00 PM</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="hours-item">
+                                <i class="fas fa-clock"></i>
+                                <h4>Tuesday</h4>
+                                <p><span class="highlight">9:00 AM</span> - <span class="highlight">6:00 PM</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="hours-item">
+                                <i class="fas fa-clock"></i>
+                                <h4>Wednesday</h4>
+                                <p><span class="highlight">9:00 AM</span> - <span class="highlight">6:00 PM</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="hours-item">
+                                <i class="fas fa-clock"></i>
+                                <h4>Thursday</h4>
+                                <p><span class="highlight">9:00 AM</span> - <span class="highlight">6:00 PM</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="hours-item">
+                                <i class="fas fa-clock"></i>
+                                <h4>Friday</h4>
+                                <p><span class="highlight">9:00 AM</span> - <span class="highlight">6:00 PM</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="hours-item">
+                                <i class="fas fa-clock"></i>
+                                <h4>Saturday</h4>
+                                <p><span class="highlight">9:00 AM</span> - <span class="highlight">6:00 PM</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="hours-item" style="background: #F28123; color: #fff;">
+                                <i class="fas fa-clock" style="color: #fff;"></i>
+                                <h4 style="color: #fff;">Sunday</h4>
+                                <p style="color: #fff; opacity: 0.9;"><span style="color: #fff;">Closed</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="hours-item">
+                                <i class="fas fa-phone"></i>
+                                <h4>Emergency Support</h4>
+                                <p><span class="highlight">+92-300-1234567</span></p>
+                                <p style="font-size: 13px; color: #888;">Available 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Business Hours End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 4: MAP START (NEW) -->
+            <!-- ============================================ -->
+            <div class="map-section wow fadeInUp" data-wow-delay="0.1s">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217902.2189070701!2d74.20199121123914!3d31.52037063664481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107e9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Al-Bina Construction Office Location Map">
+                </iframe>
+            </div>
+            <!-- Map End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 5: CTA CONTACT START (NEW) -->
+            <!-- ============================================ -->
+            <div class="cta-contact wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <h2>Ready to Start Your Construction Project?</h2>
+                    <p>Contact us today and get a free, no-obligation quote from our expert team. We'll help you bring your vision to life!</p>
+                    <a href="tel:+923001234567" class="btn">
+                        <i class="fas fa-phone"></i> Call Us Now: +92-300-1234567
+                    </a>
+                </div>
+            </div>
+            <!-- CTA Contact End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 6: FOOTER START -->
+            <!-- ============================================ -->
+            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <h2>Office Contact</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>Main Boulevard, Lahore, Pakistan</p>
+                                <p><i class="fa fa-phone-alt"></i>+92-300-1234567</p>
+                                <p><i class="fa fa-envelope"></i>info@albinaconstruction.com</p>
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Our Services</h2>
+                                <a href="service.html">Building Construction</a>
+                                <a href="service.html">House Renovation</a>
+                                <a href="service.html">Architecture Design</a>
+                                <a href="service.html">Interior Design</a>
+                                <a href="service.html">Professional Painting</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Quick Links</h2>
+                                <a href="about.html">About Us</a>
+                                <a href="contact.html">Contact Us</a>
+                                <a href="team.html">Our Team</a>
+                                <a href="portfolio.html">Our Projects</a>
+                                <a href="testimonials.html">Testimonials</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="newsletter">
+                                <h2>Subscribe to Our Newsletter</h2>
+                                <p>
+                                    Stay updated with our latest construction tips, project updates, and industry news. Subscribe now and never miss an update!
+                                </p>
+                                <div class="form">
+                                    <input class="form-control" placeholder="Enter your email">
+                                    <button class="btn" style="background: #F28123; color: #fff;">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="terms.html">Terms of Use</a>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="cookies.html">Cookies Policy</a>
+                        <a href="contact.html">Help</a>
+                        <a href="faqs.html">FAQs</a>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="index.html" style="color: #F28123;">Al-Bina Construction</a>, All Rights Reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Designed with <i class="fa fa-heart" style="color: #F28123;"></i> by <a href="https://htmlcodex.com" style="color: #F28123;">HTML Codex</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        <!-- Contact Form Validation Script -->
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for contacting Al-Bina Construction! Our team will get back to you within 24 hours.');
+                this.reset();
+            });
+        </script>
+    </body>
+</html>

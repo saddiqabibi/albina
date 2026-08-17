@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Construction Blog - Expert Tips & Insights | Al-Bina Construction Pakistan</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Construction Blog Pakistan, Building Tips, Home Renovation Ideas, Architecture Trends, Construction News" name="keywords">
+        <meta content="Read expert construction tips, home renovation ideas, and architecture trends on Al-Bina Construction's official blog. Stay updated with the latest industry news and insights." name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            .page-header {
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/page-header.jpg');
+                background-size: cover;
+                background-position: center;
+                padding: 80px 0;
+                text-align: center;
+            }
+            .page-header h2 {
+                color: #fff;
+                font-size: 42px;
+                font-weight: 700;
+            }
+            .page-header a {
+                color: #F28123;
+                font-size: 16px;
+                text-decoration: none;
+            }
+            .page-header a:hover {
+                color: #fff;
+            }
+            .page-header span {
+                color: #fff;
+                margin: 0 10px;
+            }
+            .blog-page .blog-item {
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 0 30px rgba(0,0,0,0.05);
+                transition: all 0.3s ease;
+                background: #fff;
+                margin-bottom: 30px;
+            }
+            .blog-page .blog-item:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            }
+            .blog-page .blog-img img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                transition: all 0.5s ease;
+            }
+            .blog-page .blog-img img:hover {
+                transform: scale(1.05);
+            }
+            .blog-page .blog-title {
+                padding: 20px 20px 10px;
+            }
+            .blog-page .blog-title h3 {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 1.4;
+                min-height: 55px;
+            }
+            .blog-page .blog-title h3 a {
+                color: #222;
+                text-decoration: none;
+            }
+            .blog-page .blog-title h3 a:hover {
+                color: #F28123;
+            }
+            .blog-page .blog-title .btn {
+                background: #F28123;
+                color: #fff;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                padding: 0;
+                line-height: 40px;
+                text-align: center;
+                float: right;
+                margin-top: -10px;
+            }
+            .blog-page .blog-title .btn:hover {
+                background: #222;
+            }
+            .blog-page .blog-meta {
+                padding: 0 20px 10px;
+                color: #888;
+                font-size: 14px;
+            }
+            .blog-page .blog-meta a {
+                color: #F28123;
+                text-decoration: none;
+            }
+            .blog-page .blog-meta a:hover {
+                color: #222;
+            }
+            .blog-page .blog-text {
+                padding: 0 20px 20px;
+                color: #666;
+                line-height: 1.8;
+            }
+            .blog-page .blog-text p {
+                margin-bottom: 0;
+            }
+            .pagination .page-item .page-link {
+                color: #222;
+                border: 1px solid #ddd;
+                padding: 10px 18px;
+                margin: 0 3px;
+                border-radius: 5px;
+            }
+            .pagination .page-item.active .page-link {
+                background: #F28123;
+                color: #fff;
+                border-color: #F28123;
+            }
+            .pagination .page-item .page-link:hover {
+                background: #F28123;
+                color: #fff;
+                border-color: #F28123;
+            }
+            .sidebar-widget {
+                background: #f8f9fa;
+                padding: 30px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+            .sidebar-widget h3 {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid #F28123;
+            }
+            .sidebar-widget ul {
+                list-style: none;
+                padding: 0;
+            }
+            .sidebar-widget ul li {
+                padding: 10px 0;
+                border-bottom: 1px solid #eee;
+            }
+            .sidebar-widget ul li a {
+                color: #555;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+            .sidebar-widget ul li a:hover {
+                color: #F28123;
+                padding-left: 10px;
+            }
+            .sidebar-widget ul li:last-child {
+                border-bottom: none;
+            }
+            .sidebar-widget .search-form {
+                display: flex;
+            }
+            .sidebar-widget .search-form input {
+                flex: 1;
+                padding: 12px 15px;
+                border: 1px solid #ddd;
+                border-radius: 5px 0 0 5px;
+                outline: none;
+            }
+            .sidebar-widget .search-form button {
+                background: #F28123;
+                color: #fff;
+                border: none;
+                padding: 12px 20px;
+                border-radius: 0 5px 5px 0;
+                cursor: pointer;
+            }
+            .sidebar-widget .search-form button:hover {
+                background: #222;
+            }
+            .sidebar-widget .tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            .sidebar-widget .tags a {
+                background: #fff;
+                padding: 8px 15px;
+                border-radius: 20px;
+                color: #555;
+                text-decoration: none;
+                font-size: 13px;
+                border: 1px solid #ddd;
+                transition: all 0.3s ease;
+            }
+            .sidebar-widget .tags a:hover {
+                background: #F28123;
+                color: #fff;
+                border-color: #F28123;
+            }
+            .cta-blog {
+                background: #F28123;
+                padding: 60px 0;
+                text-align: center;
+                color: #fff;
+            }
+            .cta-blog h2 {
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+            .cta-blog p {
+                font-size: 18px;
+                margin-bottom: 25px;
+                opacity: 0.9;
+            }
+            .cta-blog .btn {
+                background: #fff;
+                color: #F28123;
+                padding: 12px 40px;
+                font-weight: 600;
+                border-radius: 30px;
+                transition: all 0.3s ease;
+            }
+            .cta-blog .btn:hover {
+                background: #222;
+                color: #fff;
+            }
+            @media (max-width: 991px) {
+                .sidebar {
+                    margin-top: 40px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- ============================================ -->
+            <!-- TOP BAR START -->
+            <!-- ============================================ -->
+            <div class="top-bar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <h1 style="color: #F28123;">Al-Bina Construction</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-calendar"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Opening Hour</h3>
+                                            <p>Mon - Sat, 9:00 AM - 6:00 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-call"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Call Us</h3>
+                                            <p>+92-300-1234567</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-send-mail"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Email Us</h3>
+                                            <p>info@albinaconstruction.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ============================================ -->
+            <!-- NAV BAR START -->
+            <!-- ============================================ -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="index.html" class="nav-item nav-link">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="service.html" class="nav-item nav-link">Services</a>
+                                <a href="team.html" class="nav-item nav-link">Team</a>
+                                <a href="portfolio.html" class="nav-item nav-link">Projects</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
+                                    <div class="dropdown-menu">
+                                        <a href="blog.html" class="dropdown-item active">Blog</a>
+                                        <a href="single.html" class="dropdown-item">Single Page</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            </div>
+                            <div class="ml-auto">
+                                <a class="btn" href="contact.html" style="background: #F28123; color: #fff;">Get a Quote</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 1: PAGE HEADER START -->
+            <!-- ============================================ -->
+            <div class="page-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Our Construction Blog</h2>
+                        </div>
+                        <div class="col-12">
+                            <a href="index.html">Home</a>
+                            <span>/</span>
+                            <a href="blog.html" style="color: #F28123;">Our Blog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 2: BLOG & SIDEBAR START -->
+            <!-- ============================================ -->
+            <div class="blog">
+                <div class="container">
+                    <div class="row">
+                        <!-- Blog Posts Column -->
+                        <div class="col-lg-8">
+                            <div class="section-header text-left">
+                                <p>Latest Articles</p>
+                                <h2>Expert Tips & Insights</h2>
+                            </div>
+                            <div class="row blog-page">
+                                <!-- Blog Post 1 -->
+                                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                            <img src="img/blog-1.jpg" alt="10 Essential Tips for Building Your Dream Home">
+                                        </div>
+                                        <div class="blog-title">
+                                            <h3><a href="single.html">10 Essential Tips for Building Your Dream Home in Pakistan</a></h3>
+                                            <a class="btn" href="single.html">+</a>
+                                        </div>
+                                        <div class="blog-meta">
+                                            <p>By <a href="#">Ahmed Khan</a></p>
+                                            <p>In <a href="#">Construction Tips</a></p>
+                                            <p><i class="far fa-calendar-alt"></i> January 15, 2025</p>
+                                        </div>
+                                        <div class="blog-text">
+                                            <p>
+                                                Building your dream home is an exciting journey. From choosing the right location to selecting quality materials, this comprehensive guide covers everything you need to know for a successful construction project in Pakistan.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Blog Post 2 -->
+                                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                            <img src="img/blog-2.jpg" alt="Top 7 Home Renovation Ideas to Increase Property Value">
+                                        </div>
+                                        <div class="blog-title">
+                                            <h3><a href="single.html">Top 7 Home Renovation Ideas to Increase Property Value</a></h3>
+                                            <a class="btn" href="single.html">+</a>
+                                        </div>
+                                        <div class="blog-meta">
+                                            <p>By <a href="#">Usman Ali</a></p>
+                                            <p>In <a href="#">Renovation</a></p>
+                                            <p><i class="far fa-calendar-alt"></i> January 12, 2025</p>
+                                        </div>
+                                        <div class="blog-text">
+                                            <p>
+                                                Renovating your home can significantly increase its value. Discover our top 7 renovation ideas that offer the best return on investment, from kitchen upgrades to energy-efficient improvements.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Blog Post 3 -->
+                                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                            <img src="img/blog-3.jpg" alt="Modern Architecture Trends to Watch in 2025">
+                                        </div>
+                                        <div class="blog-title">
+                                            <h3><a href="single.html">Modern Architecture Trends to Watch in 2025</a></h3>
+                                            <a class="btn" href="single.html">+</a>
+                                        </div>
+                                        <div class="blog-meta">
+                                            <p>By <a href="#">Fatima Zaidi</a></p>
+                                            <p>In <a href="#">Architecture</a></p>
+                                            <p><i class="far fa-calendar-alt"></i> January 10, 2025</p>
+                                        </div>
+                                        <div class="blog-text">
+                                            <p>
+                                                Stay ahead of the curve with the latest architecture trends. Explore sustainable design, smart home technology, biophilic design, and more. Learn how these trends can transform your space.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Blog Post 4 -->
+                                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                            <img src="img/blog-1.jpg" alt="Sustainable Building Materials for Eco-Friendly Construction">
+                                        </div>
+                                        <div class="blog-title">
+                                            <h3><a href="single.html">Sustainable Building Materials for Eco-Friendly Construction</a></h3>
+                                            <a class="btn" href="single.html">+</a>
+                                        </div>
+                                        <div class="blog-meta">
+                                            <p>By <a href="#">Shahid Mahmood</a></p>
+                                            <p>In <a href="#">Sustainability</a></p>
+                                            <p><i class="far fa-calendar-alt"></i> January 8, 2025</p>
+                                        </div>
+                                        <div class="blog-text">
+                                            <p>
+                                                Learn about the latest sustainable building materials that are eco-friendly, cost-effective, and durable. From bamboo to recycled steel, discover how to build green in Pakistan.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Blog Post 5 -->
+                                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                            <img src="img/blog-2.jpg" alt="How to Choose the Right Contractor for Your Project">
+                                        </div>
+                                        <div class="blog-title">
+                                            <h3><a href="single.html">How to Choose the Right Contractor for Your Project</a></h3>
+                                            <a class="btn" href="single.html">+</a>
+                                        </div>
+                                        <div class="blog-meta">
+                                            <p>By <a href="#">Ahmed Khan</a></p>
+                                            <p>In <a href="#">Contractors</a></p>
+                                            <p><i class="far fa-calendar-alt"></i> January 5, 2025</p>
+                                        </div>
+                                        <div class="blog-text">
+                                            <p>
+                                                Choosing the right contractor is crucial for your project's success. This guide shares tips on evaluating experience, checking references, and ensuring transparent communication.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Blog Post 6 -->
+                                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                            <img src="img/blog-3.jpg" alt="Interior Design Tips for Modern Pakistani Homes">
+                                        </div>
+                                        <div class="blog-title">
+                                            <h3><a href="single.html">Interior Design Tips for Modern Pakistani Homes</a></h3>
+                                            <a class="btn" href="single.html">+</a>
+                                        </div>
+                                        <div class="blog-meta">
+                                            <p>By <a href="#">Fatima Zaidi</a></p>
+                                            <p>In <a href="#">Interior Design</a></p>
+                                            <p><i class="far fa-calendar-alt"></i> January 3, 2025</p>
+                                        </div>
+                                        <div class="blog-text">
+                                            <p>
+                                                Transform your home with these interior design tips tailored for modern Pakistani homes. From color schemes to furniture selection, create a space that reflects your style.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pagination -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ============================================ -->
+                        <!-- SECTION 3: SIDEBAR START (NEW) -->
+                        <!-- ============================================ -->
+                        <div class="col-lg-4 sidebar">
+                            <!-- Search Widget -->
+                            <div class="sidebar-widget wow fadeInUp" data-wow-delay="0.1s">
+                                <h3>Search Articles</h3>
+                                <div class="search-form">
+                                    <input type="text" placeholder="Search blog...">
+                                    <button><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- Categories Widget -->
+                            <div class="sidebar-widget wow fadeInUp" data-wow-delay="0.2s">
+                                <h3>Categories</h3>
+                                <ul>
+                                    <li><a href="#">Construction Tips <span style="float: right; color: #F28123;">(8)</span></a></li>
+                                    <li><a href="#">Renovation Ideas <span style="float: right; color: #F28123;">(6)</span></a></li>
+                                    <li><a href="#">Architecture Design <span style="float: right; color: #F28123;">(5)</span></a></li>
+                                    <li><a href="#">Interior Design <span style="float: right; color: #F28123;">(7)</span></a></li>
+                                    <li><a href="#">Sustainability <span style="float: right; color: #F28123;">(4)</span></a></li>
+                                    <li><a href="#">Project Management <span style="float: right; color: #F28123;">(3)</span></a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Recent Posts Widget -->
+                            <div class="sidebar-widget wow fadeInUp" data-wow-delay="0.3s">
+                                <h3>Recent Posts</h3>
+                                <ul>
+                                    <li><a href="single.html">10 Essential Tips for Building Your Dream Home</a></li>
+                                    <li><a href="single.html">Top 7 Home Renovation Ideas to Increase Property Value</a></li>
+                                    <li><a href="single.html">Modern Architecture Trends to Watch in 2025</a></li>
+                                    <li><a href="single.html">Sustainable Building Materials for Eco-Friendly Construction</a></li>
+                                    <li><a href="single.html">How to Choose the Right Contractor for Your Project</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Tags Widget -->
+                            <div class="sidebar-widget wow fadeInUp" data-wow-delay="0.4s">
+                                <h3>Popular Tags</h3>
+                                <div class="tags">
+                                    <a href="#">Construction</a>
+                                    <a href="#">Renovation</a>
+                                    <a href="#">Architecture</a>
+                                    <a href="#">Interior Design</a>
+                                    <a href="#">Sustainability</a>
+                                    <a href="#">Building Tips</a>
+                                    <a href="#">Home Improvement</a>
+                                    <a href="#">Real Estate</a>
+                                    <a href="#">Green Building</a>
+                                </div>
+                            </div>
+
+                            <!-- Newsletter Widget -->
+                            <div class="sidebar-widget wow fadeInUp" data-wow-delay="0.5s" style="background: #F28123; color: #fff;">
+                                <h3 style="color: #fff; border-bottom-color: rgba(255,255,255,0.3);">Subscribe to Our Newsletter</h3>
+                                <p style="color: #fff; opacity: 0.9;">Get the latest construction tips and updates delivered to your inbox.</p>
+                                <div class="form">
+                                    <input class="form-control" placeholder="Enter your email" style="border-radius: 5px; margin-bottom: 10px;">
+                                    <button class="btn" style="background: #fff; color: #F28123; width: 100%; font-weight: 600;">Subscribe Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sidebar End -->
+                    </div>
+                </div>
+            </div>
+            <!-- Blog End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 4: CTA BLOG START (NEW) -->
+            <!-- ============================================ -->
+            <div class="cta-blog wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <h2>Looking for Expert Construction Services?</h2>
+                    <p>Whether you're building a new home or renovating an existing space, our expert team is here to help. Contact us for a free consultation and quote.</p>
+                    <a href="contact.html" class="btn">Get a Free Quote Today</a>
+                </div>
+            </div>
+            <!-- CTA Blog End -->
+
+            <!-- ============================================ -->
+            <!-- SECTION 5: FOOTER START -->
+            <!-- ============================================ -->
+            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <h2>Office Contact</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>Main Boulevard, Lahore, Pakistan</p>
+                                <p><i class="fa fa-phone-alt"></i>+92-300-1234567</p>
+                                <p><i class="fa fa-envelope"></i>info@albinaconstruction.com</p>
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Our Services</h2>
+                                <a href="service.html">Building Construction</a>
+                                <a href="service.html">House Renovation</a>
+                                <a href="service.html">Architecture Design</a>
+                                <a href="service.html">Interior Design</a>
+                                <a href="service.html">Professional Painting</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Quick Links</h2>
+                                <a href="about.html">About Us</a>
+                                <a href="contact.html">Contact Us</a>
+                                <a href="team.html">Our Team</a>
+                                <a href="portfolio.html">Our Projects</a>
+                                <a href="testimonials.html">Testimonials</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="newsletter">
+                                <h2>Subscribe to Our Newsletter</h2>
+                                <p>
+                                    Stay updated with our latest construction tips, project updates, and industry news. Subscribe now and never miss an update!
+                                </p>
+                                <div class="form">
+                                    <input class="form-control" placeholder="Enter your email">
+                                    <button class="btn" style="background: #F28123; color: #fff;">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="terms.html">Terms of Use</a>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="cookies.html">Cookies Policy</a>
+                        <a href="contact.html">Help</a>
+                        <a href="faqs.html">FAQs</a>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="index.html" style="color: #F28123;">Al-Bina Construction</a>, All Rights Reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Designed with <i class="fa fa-heart" style="color: #F28123;"></i> by <a href="https://htmlcodex.com" style="color: #F28123;">HTML Codex</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
